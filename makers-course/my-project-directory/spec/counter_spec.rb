@@ -1,4 +1,4 @@
-require 'counter'
+require "counter"
 
 RSpec.describe Counter do
   it "counts up to 5" do
