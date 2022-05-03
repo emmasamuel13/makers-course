@@ -1,4 +1,4 @@
-require 'reminder2'
+require 'reminder'
 
 RSpec.describe Reminder do
   context "when no task is set" do
