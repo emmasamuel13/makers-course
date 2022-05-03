@@ -20,4 +20,13 @@ RSpec.describe "reading_time method" do
     result = reading_time(350)
     expect(result).to eq "It will take you 2 minutes to read this text"
   end
+
+  it "fails if we pass in a negative" do
+    expect { reading_time(-300) }.to raise_error "Number needs to be positive"
+  end
+
+  it "fails is we pass in something that's not an integer" do
+    expect { reading_time("hi") }.to raise_error "That's not an integer"
+  end
+
 end
