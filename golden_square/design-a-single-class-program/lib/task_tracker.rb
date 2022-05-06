@@ -17,12 +17,11 @@ class TaskTracker
   end
 
   def complete(task) # marks the task as complete and removes it from the list
-    new_list = []
-    @task_list.each do |chore|
-      unless chore == task
-        new_list << chore
+    @task_list.each_with_index do |chore, index|
+      if chore == task
+        @task_list.delete_at(index)
       end
     end
-    return new_list.join("\n")
+    return @task_list.join("\n")
   end
 end
