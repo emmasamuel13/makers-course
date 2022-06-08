@@ -2,7 +2,7 @@ package learning_java_vs_code;
 
 class Calculator {
   public static void main(String[] args) {
-    Integer result = 2 + 2;
-    System.out.printf("The result is %d \n", result);
+    double result = 2.5 + 2.5;
+    System.out.printf("The result is %s \n", result);
   }  
 }
